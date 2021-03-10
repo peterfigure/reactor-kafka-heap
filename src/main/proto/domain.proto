@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package reactorkafkatest;
+
+option java_package = "io.ys";
+option java_outer_classname = "PetDomain";
+
+message Pet {
+    string name = 1;
+    uint32 age = 2;
+}
+
+message Pets {
+    string store_name = 1;
+    repeated Pet pets = 2;
+}
